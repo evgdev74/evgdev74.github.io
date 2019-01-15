@@ -1,0 +1,240 @@
+.first-screen {
+    height: 100vh;
+    max-height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4cdd6;
+}
+.test-slider .no-gutters {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.carousel-indicators-caption {
+    display: flex; flex-direction: column;
+}
+.carousel-caption {
+    color: #000;
+    top: 9.5vw;
+}
+.carousel-caption h3 {
+    font-size: 2.19vw;
+    margin-bottom: 0.83vw;
+    letter-spacing: 0.07vw;
+}
+.carousel-caption p {
+    font-size: 1.35vw;
+    margin-bottom: 1.04vw;
+    letter-spacing: 0.04vw;
+}
+.carousel-caption button {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    padding: 0.52vw 1.61vw;
+    margin-right: 0.94vw;
+}
+.btn-primary {
+    background-color: #ff891e;
+    border-color: #ff891e;
+}
+.btn-default {
+    border-color: #212121;
+}
+.btn-primary:hover {
+    background-color: #4ec67f;
+    border-color: #4ec67f;
+}
+.btn-default:hover {
+    background-color: #4ec67f;
+}
+.carousel-control-next {
+    justify-content: flex-end;
+}
+.carousel-control-next-icon {
+    height: 4.38vw;
+    width: 3.9vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-image: url(../img/next.png);
+    background-size: 0.52vw 0.78vw;
+    background-position: 1.6vw center;
+}
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+.carousel-control-prev-icon {
+    height: 4.38vw;
+    width: 3.9vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-image: url(../img/prev.png);
+    background-size: 0.52vw 0.78vw;
+    background-position: 1.4vw center;
+}
+.carousel-indicators {
+    bottom: 0.21vw;
+}
+.carousel-indicators li {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0,0,0,0.15);
+    height: 2.86vw;
+    padding: 0.31vw;
+    border: none;
+    opacity: 1;
+    border-radius: 2px;
+    text-indent: 0;
+    margin-right: 0.7vw;
+}
+.carousel-indicators li.active {
+    background-color: rgba(0,0,0,0.44);
+}
+.carousel-indicators img {
+    border-radius: 3px;
+    height: 2.9vw;
+    width: auto;
+}
+.carousel-indicators-caption {
+    margin-left: 0.47vw;
+    color: #fff;
+}
+.carousel-indicators-caption p {
+    font-size: 0.57vw;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0.08vw;
+    line-height: 1.3;
+}
+.carousel-indicators-caption p:first-child {
+    font-size: 0.63vw;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01vw;
+    margin-top: 0.26vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item img {
+        max-height: 57vw;
+        max-width: none;
+        margin-left: 18vw;
+    }
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+    }
+    .carousel-caption h3 {
+        font-size: 3vw;
+        margin-bottom: 1vw;
+        letter-spacing: 0.5px;
+    }
+    .carousel-caption p {
+        font-size: 1.8vw;
+        margin-bottom: 1.3vw;
+        letter-spacing: 0.6px;
+    }
+    .carousel-caption button {
+        font-size: 1.2vw;
+        text-transform: uppercase;
+        padding: 0.5vw 1.9vw;
+        margin-right: 1vw;
+        border-radius: 2px;
+    }
+    .carousel-control-next-icon {
+        height: 7.4vw;
+        width: 6vw;
+        background-position: 3.7vw center;
+        background-size: 1vw 1.5vw;
+    }
+    .carousel-control-prev-icon {
+        height: 7.4vw;
+        width: 6vw;
+        background-position: 2vw center;
+        background-size: 1vw 1.5vw;
+    }
+    .carousel-indicators {
+        margin: 0 9vw;
+        bottom: 2.25vw;
+    }
+    .carousel-indicators li {
+        height: 3.8vw;
+        padding: 0.4vw;
+    }
+    .carousel-indicators img {
+        width: 3.5vw;
+        height: auto;
+    }
+    .carousel-indicators-caption {
+        margin-left: 0.7vw;
+    }
+
+    .carousel-indicators-caption p {
+        font-size: 0.8vw;
+        letter-spacing: 0.09vw;
+    }
+    .carousel-indicators-caption p:first-child {
+        font-size: 0.9vw;
+        letter-spacing: -0.015vw;
+        margin-top: 0.2vw;
+    }
+}
+@media screen and (max-width: 767px) {
+    .carousel-caption {
+        top: 23%;
+        width: 60%;
+        left: 20%;
+    }
+    .carousel-caption h3 {
+        font-size: 3.5vw;
+        letter-spacing: 0;
+        margin-bottom: 0.5vw;
+
+    }
+    .carousel-caption p {
+        font-size: 2.3vw;
+        margin-bottom: 3vw;
+
+    }
+    .carousel-caption button {
+        font-size: 1.7vw;
+        padding: 1vw 3vw;
+        margin-right: 0;
+    }
+    .carousel-indicators {
+        width: 22%;
+        margin-left: 39%;
+    }
+
+    .carousel-indicators li {
+        height: 10px;
+        width: 10px;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid #000;
+        border-radius: 100%;
+    }
+    .carousel-indicators li.active {
+        background-color: #000;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-caption {
+        text-align: left;
+    }
+
+
+}
+@media screen and (min-width: 992px) {
+    .carousel-item .img-fluid {
+        min-width: 100%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .carousel-imdicator img {
+        width: 3.5vw;
+    }
+}
