@@ -238,3 +238,13 @@
         width: 3.5vw;
     }
 }
+@-moz-document url-prefix() {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .carousel-item img {
+            max-height: 57vw;
+            max-width: none;
+            min-height: 40vw;
+            margin-left: 0;
+        }
+    }
+}
